@@ -32,31 +32,25 @@ let showWinner = (userChoice,compChoice) => {
     }
     else if (userChoice == "rock"){
          if (compChoice == "scisors"){
-            console.log("yow won");
             userWon();
          }
          else {
-            console.log("you lost");
             compWon();
          }
     }
     else if (userChoice == "paper"){
         if (compChoice == "scisors"){
-           console.log("yow lost");
            compWon();
         }
         else {
-           console.log("you won");
            userWon();
         }
    }
     else {
         if (compChoice == "rock"){
-        console.log("yow lost");
         compWon();
         }
         else {
-        console.log("you won");
         userWon();
         }   
     }
@@ -74,12 +68,12 @@ let compWon = () => {
     csc.innerText = compScore + 1;
     compScore++;
     msg.style.color = "white";
-    msg.innerText = "You have lost the match";
+    msg.innerhtml = "<i>You have lost the match</i>";
     msgbg.style.backgroundColor = "red";
 }
 
 let drawMatch = () => {
-    msg.innerText = "The match was tied";
+    msg.innerhtml = "<i>The match was tied</i>";
     msg.style.color = "white";
     msgbg.style.backgroundColor = "rgb(27, 119, 212)";
 }

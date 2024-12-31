@@ -83,3 +83,31 @@ img{
         background: linear-gradient(to right, #00ffff 5%, #6699ff 80%);
     }
 }
+@media (max-height : 840px) and (max-width : 450px){
+    .result{
+        margin-left: 80px; 
+        width : 50%;     
+        margin-top: 60px;
+
+    }
+    .choices{
+        gap : 10px;
+        margin-right: 2px;
+    }
+    img{
+        width : 100px;
+        height : 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .choice{
+        margin-top: 60px;
+    }
+    .body{
+        background: linear-gradient(to right, #00ffff 5%, #6699ff 80%);
+    }
+    .scoretable{
+        margin-top: 60px;
+        margin-left: 15px;
+    }
+}

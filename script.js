@@ -68,12 +68,12 @@ let compWon = () => {
     csc.innerText = compScore + 1;
     compScore++;
     msg.style.color = "white";
-    msg.innerhtml = "<i>You have lost the match</i>";
+    msg.innerHTML = "<i>You have lost the match</i>";
     msgbg.style.backgroundColor = "red";
 }
 
 let drawMatch = () => {
-    msg.innerhtml = "<i>The match was tied</i>";
+    msg.innerHTML = "<i>The match was tied</i>";
     msg.style.color = "white";
     msgbg.style.backgroundColor = "rgb(27, 119, 212)";
 }
